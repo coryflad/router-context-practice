@@ -4,13 +4,13 @@ import { NavLink } from 'react-router-dom'
 function Navigation() {
     return (
             <div className='nav'>
-                <h3>Nav Component</h3>
+                <h2>Routing / Context Practice</h2>
                 <NavLink to='/'>
-                    <h1>Google Booksearch </h1>
+                    <button>GO HOME!</button>
                 </NavLink>
                 <br />
                 <NavLink to='/search'>
-                    <button>GO TO NEXT PAGE!</button>
+                    <button>GO TO SEARCH PAGE!</button>
                 </NavLink>
                 <br />
             </div>     

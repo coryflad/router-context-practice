@@ -97,7 +97,7 @@ class Search extends React.Component {
 
         return (
             <div className='search'>
-                <h2>Search Component</h2>
+                <h2>What would you like to search for in the Google Books API?</h2>
                 <form onSubmit={this.handleSearch}>
                     <input type='text' name='q' />
                     <br />
