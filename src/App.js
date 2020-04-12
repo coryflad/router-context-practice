@@ -6,7 +6,7 @@ import Error from './Components/Error'
 import Navigation from './Components/Navigation'
 import Button from './Components/Button'
 
-import {ThemeContextConsumer} from './themeContext'
+import { ThemeContextConsumer } from './themeContext'
 
 import './App.css'
 
