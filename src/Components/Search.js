@@ -100,7 +100,7 @@ class Search extends React.Component {
                 <form onSubmit={this.handleSearch}>
                     <input type='text' name='q' />
                     <br />
-                    <button type='submit'>Search</button>
+                    <button type='submit'>SEARCH</button>
                 </form>
                 {books}
                 {errorMessage}

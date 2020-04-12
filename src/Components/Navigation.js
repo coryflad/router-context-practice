@@ -7,14 +7,14 @@ function Navigation() {
         <div className='nav'>
             <h2>Routing / Context Practice</h2>
             <NavLink to='/'>
-                <button>GO HOME!</button>
+                <button>GO HOME</button>
             </NavLink>
             <br />
             <NavLink to='/search'>
-                <button>GO TO SEARCH PAGE!</button>
+                <button>GO TO SEARCH PAGE</button>
             </NavLink>
             <br />
-            <button>Switch Theme</button>
+            <button>SWITCH THEME</button>
         </div>
     )
 }
