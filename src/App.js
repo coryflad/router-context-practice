@@ -1,22 +1,21 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Home from './Components/Home'
-import About from './Components/About'
-import Contact from './Components/Contact'
+import Search from './Components/Search'
 import Error from './Components/Error'
 import Navigation from './Components/Navigation'
+import './App.css'
 
 
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className='App'>
         <BrowserRouter>
           <Navigation />
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/about' component={About} />
-            <Route path='/contact' component={Contact} />
+            <Route path='/search' component={Search} />
             <Route component={Error} />
           </Switch>
         </BrowserRouter>

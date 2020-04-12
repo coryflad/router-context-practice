@@ -3,16 +3,17 @@ import { NavLink } from 'react-router-dom'
 
 function Navigation() {
     return (
-        <div>
-            <div>
-                <NavLink to='/'>Home</NavLink>
+            <div className='nav'>
+                <h3>Nav Component</h3>
+                <NavLink to='/'>
+                    <h1>Google Booksearch </h1>
+                </NavLink>
                 <br />
-                <NavLink to='/about'>About</NavLink>
+                <NavLink to='/search'>
+                    <button>GO TO NEXT PAGE!</button>
+                </NavLink>
                 <br />
-                <NavLink to='/contact'>Contact</NavLink>
-            </div>
-
-        </div>
+            </div>     
     )
 }
 
