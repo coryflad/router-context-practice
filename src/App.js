@@ -4,27 +4,31 @@ import Home from './Components/Home'
 import Search from './Components/Search'
 import Error from './Components/Error'
 import Navigation from './Components/Navigation'
+
+import ThemeContext from './themeContext'
+
 import './App.css'
 
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className='App'>
-        <BrowserRouter>
-          <Navigation />
-          <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/search' component={Search} />
-            <Route component={Error} />
-          </Switch>
-        </BrowserRouter>
-      </div>
+function App() {
+  return (
+    <ThemeContext.Consumer>
+      {theme => (
+        <div className={`${theme}-theme`}>
+          <BrowserRouter>
+            <Navigation />
+            <Switch>
+              <Route exact path='/' component={Home} />
+              <Route path='/search' component={Search} />
+              <Route component={Error} />
+            </Switch>
+          </BrowserRouter>
+        </div>
+      )}
+    </ThemeContext.Consumer>
 
-
-
-
-    )
-  }
+  )
 }
+
+
 export default App
