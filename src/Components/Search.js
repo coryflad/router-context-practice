@@ -86,7 +86,6 @@ class Search extends React.Component {
     }
 
 
-
     render() {
 
         const errorMessage = this.state.error ? <div>{this.state.error}</div> : false
