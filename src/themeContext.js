@@ -1,8 +1,8 @@
 import React from 'react'
-const {Provider, Consumer} = React.createContext()
+const { Provider, Consumer } = React.createContext()
 
 class ThemeContextProvider extends React.Component {
-    state= {
+    state = {
         theme: 'light'
     }
 
@@ -15,14 +15,14 @@ class ThemeContextProvider extends React.Component {
             }
         })
     }
-    
+
     render() {
         return (
-            <Provider value={{theme: this.state.theme, toggleTheme: this.toggleTheme}}>
+            <Provider value={{ theme: this.state.theme, toggleTheme: this.toggleTheme }}>
                 {this.props.children}
             </Provider>
         )
     }
 }
 
-export {ThemeContextProvider, Consumer as ThemeContextConsumer}
+export { ThemeContextProvider, Consumer as ThemeContextConsumer }

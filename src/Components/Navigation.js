@@ -14,7 +14,7 @@ function Navigation() {
                 <button>GO TO SEARCH PAGE</button>
             </NavLink>
             <br />
-            
+
         </div>
     )
 }

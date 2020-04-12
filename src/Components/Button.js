@@ -1,5 +1,5 @@
 import React from "react"
-import {ThemeContextConsumer} from '../themeContext'
+import { ThemeContextConsumer } from '../themeContext'
 
 function Button(props) {
     return (
@@ -8,7 +8,7 @@ function Button(props) {
                 <button onClick={context.toggleTheme} className={`${context.theme}-theme`}>Switch Theme</button>
             )}
         </ThemeContextConsumer>
-    )    
+    )
 }
 
 export default Button
