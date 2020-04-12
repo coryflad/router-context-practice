@@ -4,18 +4,20 @@ import Home from './Components/Home'
 import Search from './Components/Search'
 import Error from './Components/Error'
 import Navigation from './Components/Navigation'
+import Button from './Components/Button'
 
-import ThemeContext from './themeContext'
+import {ThemeContextConsumer} from './themeContext'
 
 import './App.css'
 
 
-function App() {
+function App(props) {
   return (
-    <ThemeContext.Consumer>
-      {theme => (
-        <div className={`${theme}-theme`}>
+    <ThemeContextConsumer>
+      {context => (
+        <div className={`${context.theme}-theme`}>
           <BrowserRouter>
+            <Button />
             <Navigation />
             <Switch>
               <Route exact path='/' component={Home} />
@@ -25,7 +27,7 @@ function App() {
           </BrowserRouter>
         </div>
       )}
-    </ThemeContext.Consumer>
+    </ThemeContextConsumer>
 
   )
 }
